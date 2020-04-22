@@ -77,7 +77,6 @@ app.get("/products", (req, res) => {
   res.send({
     products: [],
   });
-  console.log(req.query.search);
 });
 
 app.get("/help/*", (req, res) => {

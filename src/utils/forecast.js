@@ -16,7 +16,7 @@ const forecast = (latitute, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]} it is currently ${body.current.temperature} out there but it actual ${body.current.feelslike}`
+        `${body.current.weather_descriptions[0]} it is currently ${body.current.temperature} out there but it actual ${body.current.feelslike} with humidity at ${body.current.humidity}`
       );
     }
   });

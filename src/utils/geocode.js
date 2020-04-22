@@ -6,9 +6,7 @@ const geocode = (address, callback) => {
     encodeURIComponent(address) +
     `.json?access_token=pk.eyJ1IjoibjdncmVlbiIsImEiOiJjazk4cWw4dWgxazJkM2dtc2pqMWZrOW5pIn0.hOKnqmxvKJe7THt5YFLgHA&limit=1`;
 
-  console.log(URL);
   request(URL, { json: true }, (error, res) => {
-    console.log("res = ", res.body);
     const { body } = res;
     if (error) {
       callback("Unable to connect to geoparser");
