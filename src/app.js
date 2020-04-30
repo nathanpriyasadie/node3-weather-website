@@ -68,6 +68,18 @@ app.get("/weather", (req, res) => {
   );
 });
 
+app.get("/myweather", (req, res) => {
+  const { latitude, longitude } = req.query;
+  forecast(latitude, longitude, (error, forecastData) => {
+    if (error) {
+      return res.status(404).send({ error });
+    }
+    res.send({
+      forecastData,
+    });
+  });
+});
+
 app.get("/products", (req, res) => {
   if (!req.query.search) {
     return res.send({
