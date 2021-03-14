@@ -31,8 +31,12 @@ header a {
   text-decoration: none;
 }
 
+header a:hover {
+  font-weight: bolder;
+}
+
 .portrait {
-  width: 250px;
+  width: 100%;
 }
 
 h1 {
@@ -47,8 +51,12 @@ input {
 
 button {
   cursor: pointer;
-  border: 1px solid #888888;
+  border: 1px solid #ffffff;
   background: #888888;
   color: white;
   padding: 8px;
+}
+
+button:hover {
+  background-color: #33b5e5;
 }

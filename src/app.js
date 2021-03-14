@@ -22,24 +22,24 @@ app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weather App",
+    title: "☁️Weather App",
     name: "Nathan Priyasadie",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About Me",
+    title: "🤔How It Works",
     name: "Nathan Priyasadie",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "Help",
+    title: "👋Help",
     name: "Nathan Priyasadie",
     text:
-      "HAdipisicing voluptate ut aliquip eiusmod exercitation eu est incididunt proident adipisicing ipsum. Amet cillum cillum aute consectetur eiusmod ut. Dolor enim dolor cillum aliquip aliqua minim do nostrud esse amet do. Do non incididunt ut eiusmod voluptate excepteur culpa. Eu aliqua ut veniam qui velit minim ullamco veniam veniam. Voluptate dolore in exercitation exercitation proident.",
+      "For more info nathanpriyasadie@gmail.com",
   });
 });
 

@@ -35,7 +35,7 @@ getLocationWeatherButton.addEventListener("click", (e) => {
   }
   navigator.geolocation.getCurrentPosition((position) => {
     const { longitude, latitude } = position.coords;
-    fetch(`/myweather?latitude=${latitude}&longitude=${longitude}`)
+    fetch(`/myweather?latitude=${longitude}&longitude=${latitude}`)
       .then((res) => {
         res.json().then((data) => {
           if (data.error) {
